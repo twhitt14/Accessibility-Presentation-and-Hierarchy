@@ -24,4 +24,5 @@ So what's going on...?
 If you paid close attention you probably noticed I said to turn off voiceover before running the app. If voiceover was on when the app opened, then turned off, you wouldn't see the problem I described. If voiceover was on the whole time, you'd also fail to see the bug. Voiceover appears to activate some special methods/listeners that do something special. Something that `accessibilityActivate()` also does (probably as a side effect of attempting to use accessibility). It's very probably that a user will open an app with voiceover off, then turn it on at some point. So if your app has `overFullScreen`, `overCurrentContext`, or even `custom` transitions, things will get really jumbled up in voiceover. For now (as of 8/15/18) you can use this fix to prevent the problem. 
 
 Cheers!
-- Trevor
+
+Trevor
