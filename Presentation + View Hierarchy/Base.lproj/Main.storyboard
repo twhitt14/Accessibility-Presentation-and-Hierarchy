@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Presentation___View_Hierarchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="klh-4Y-NJ0">
+                                <rect key="frame" x="71" y="128" width="272" height="480"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MA-Sp-ipQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-AB-aoV">
+                                        <rect key="frame" x="0.0" y="40" width="272" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="JqA-b7-Z7S"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-Hh-Say">
+                                        <rect key="frame" x="0.0" y="50" width="272" height="30"/>
+                                        <state key="normal" title="Show (e.g. Push)"/>
+                                        <connections>
+                                            <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wX-19-82a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-aU-EMk">
+                                        <rect key="frame" x="0.0" y="90" width="272" height="30"/>
+                                        <state key="normal" title="Show Detail (e.g. Replace)"/>
+                                        <connections>
+                                            <action selector="showDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwL-VT-hnE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zq-fc-Tkk">
+                                        <rect key="frame" x="0.0" y="130" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Default"/>
+                                        <connections>
+                                            <action selector="presentModallyDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgc-Nr-WZ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZG-Hi-lFP">
+                                        <rect key="frame" x="0.0" y="170" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Full Screen"/>
+                                        <connections>
+                                            <action selector="presentModallyFullScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YmH-eH-g0E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-8Q-00g">
+                                        <rect key="frame" x="0.0" y="210" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Current Context"/>
+                                        <connections>
+                                            <action selector="presentModallyCurrentContext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCi-0t-BrY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-2T-yKF">
+                                        <rect key="frame" x="0.0" y="250" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Page Sheet"/>
+                                        <connections>
+                                            <action selector="presentModallyPageSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeh-zi-fij"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eF-uo-kml">
+                                        <rect key="frame" x="0.0" y="290" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Form Sheet"/>
+                                        <connections>
+                                            <action selector="presentModallyFormSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Jw-je-Xcl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5A-fn-AXd">
+                                        <rect key="frame" x="0.0" y="330" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Over Full Screen"/>
+                                        <connections>
+                                            <action selector="presentModallyOverFullScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYo-dI-95o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxJ-GW-dL5">
+                                        <rect key="frame" x="0.0" y="370" width="272" height="30"/>
+                                        <state key="normal" title="Present Modally - Over Current Context"/>
+                                        <connections>
+                                            <action selector="presentModallyOverCurrentContext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnO-5R-WJY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pns-Jl-fJ0">
+                                        <rect key="frame" x="0.0" y="410" width="272" height="30"/>
+                                        <state key="normal" title="Present As Popover"/>
+                                        <connections>
+                                            <action selector="presentAsPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVs-U9-mdb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-HO-BFD">
+                                        <rect key="frame" x="0.0" y="450" width="272" height="30"/>
+                                        <state key="normal" title="Custom"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="klh-4Y-NJ0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UCr-9e-pQN"/>
+                            <constraint firstItem="klh-4Y-NJ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Whn-C9-Fgm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="presentationStyleLabel" destination="7MA-Sp-ipQ" id="dkz-7J-CmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
