@@ -1,6 +1,6 @@
 # Voiceover Accessibility + Modal Presentation and View Hierarchy
 
-I noticed that when building an app for voiceover accessibility, if you use modal presentation styles like "overFullScreen" and "overCurrentContext" it's possible for voiceover to highlight elements on view controllers behind the current one. This is bad and kind of seems like a bug on Apple's part.
+I noticed that when building an app for voiceover accessibility, if you use modal presentation styles like `overFullScreen` and `overCurrentContext` it's possible for voiceover to highlight elements on view controllers behind the current one. This is bad and kind of seems like a bug on Apple's part.
 
 This is a sample app that I used to experiment and I finally came across `accessibilityActivate()`, which "fixes" the problem described above. Below are a few steps to see & fix the problem I'm talking about.
 
